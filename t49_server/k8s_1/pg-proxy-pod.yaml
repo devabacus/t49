@@ -11,7 +11,7 @@ spec:
     image: alpine/socat
     args:
       - "TCP-LISTEN:5432,fork,reuseaddr"
-      - "TCP:192.168.0.6:5432"
+      - "TCP:192.168.0.7:5432"
     ports:
       - name: postgres-port # Именуем порт для ясности
         containerPort: 5432
